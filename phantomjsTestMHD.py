@@ -121,6 +121,8 @@ class MHDSpider():
             else:
                 step = r_step
 
+            if(step == []):
+                return True
             while(1):
                 # content = driver.page_source
                 # soup = BeautifulSoup(content, 'html5lib')
