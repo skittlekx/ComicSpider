@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
 import os
+import time
 
 class MHDSpider(Base):
     def parse(self,url,retry_count=7):
