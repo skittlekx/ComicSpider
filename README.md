@@ -1,16 +1,19 @@
 # ComicSpider
-新手入门
+新手入门,python 3.6编写
 
 练习使用 selenium和phantomjs写爬虫
 
-包含内容：
+# 文件内容：
+
+Base.py                 --爬虫类基类，主要包含下载图片、检测章节完整性、读写章节信息等功能
+
+Spider.py               --爬虫类，继承自Base,针对网站编写的爬虫
+
+main.py                 --主函数，程序入口，给漫画链接的储存路径，调用爬虫类
 
 1.漫画堆网站爬虫
 
-phantomjsTestMHD.py      --漫画堆爬虫
+2.漫画堆手机站爬虫（有些漫画在PC端网页封禁，手机端可打开）
 
-driverTestMHD.py         --漫画堆手机站爬虫
+3.漫画屋爬虫，实测下载不成功，待修改
 
-2.漫画屋爬虫，实测下载不成功，待修改
-
-phantomjsTestDM5.py      --漫画屋爬虫

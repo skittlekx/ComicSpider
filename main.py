@@ -1,12 +1,10 @@
-from phantomjsTestMHD import MHDSpider
-from driverTestMHD import MHDSpider_m
-from phantomjsTestDM5 import DM5Spider
+from Spider import MHDSpider
 
 if __name__ == '__main__':
     save_path = 'C:/Users/skittle/Downloads/ToolKit/ComicSpider/Comics/'
 
-    url = 'https://www.manhuadui.com/manhua/yeliangshen/'
-    name = '野良神'
+    url = 'https://www.manhuadui.com/manhua/shanchangzhuonongdegaomutongxue/'
+    name = '擅长捉弄的高木同学'
 
     # url = 'http://www.dm5.com/manhua-yaojingdeweiba-bainianrenwu/'
     # name = '妖精的尾巴 百年任务'
