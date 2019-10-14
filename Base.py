@@ -125,6 +125,7 @@ class Base():
         res = []
         files = os.listdir(self.chapter_path)
         k = 1
+        end_file_name = 0
         for i,i_file in enumerate(files):
             fname = i_file[:i_file.find('.')]
             n_i = int(fname)
@@ -136,8 +137,10 @@ class Base():
                     res.append(num+sub_i)
                     k = k+1
                     sub_i = sub_i + 1
-        file_count = len(files)
-        if res == [] and c_num != 0 and c_num != file_count:
-            for i in range(len(files),c_num):
+            end_file_name = n_i
+        
+        # file_count = len(files)
+        if c_num != 0 and c_num != end_file_name:
+            for i in range(end_file_name,c_num):
                 res.append(i+1)
         return res
